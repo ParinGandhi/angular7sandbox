@@ -9,24 +9,17 @@ import { Component } from '@angular/core';
 export class UserComponent {
     // Properties
     firstName = 'John';
-    lastName = 'Doe';
+    lastName = 'Smith';
     age = 30;
+    address = {
+        street: '50 Main St.',
+        city: 'Boston',
+        state: 'MA'
+    }
 
     // Methods
     // Constructor will run when this class is initialized
     constructor() {
-        console.log("Hello user...");
-        this.sayHello();
-        console.log(this.age);
-        this.hasBirthday();
-        console.log(this.age);
-    }
 
-    sayHello() {
-        console.log(`Hello ${this.firstName}`);
-    }
-
-    hasBirthday() {
-        this.age += 1;
     }
 }
